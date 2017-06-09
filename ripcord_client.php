@@ -11,7 +11,7 @@
 /**
  * Includes the static ripcord factory class and exceptions
  */
-require_once(dirname(__FILE__).'/ripcord.php');
+//require_once(dirname(__FILE__).'/ripcord.php');
 
 /**
  * This class implements a simple RPC client, for XML-RPC, (simplified) SOAP 1.1 or Simple RPC. The client abstracts 
@@ -44,6 +44,11 @@ require_once(dirname(__FILE__).'/ripcord.php');
  * @link  http://wiki.moviemeter.nl/index.php/API Moviemeter API documentation
  * @package Ripcord
  */
+
+namespace ripcord;
+
+use ripcord\ripcord;
+
 class Ripcord_Client 
 {
 	/**

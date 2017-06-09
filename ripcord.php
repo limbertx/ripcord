@@ -13,6 +13,8 @@
  * and check for errors.
  * @package Ripcord
  */
+namespace ripcord;
+
 class ripcord
 {
 	/**

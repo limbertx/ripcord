@@ -11,7 +11,7 @@
 /**
  * Includes the static ripcord factory class and exceptions
  */
-require_once(dirname(__FILE__).'/ripcord.php');
+#require_once(dirname(__FILE__).'/ripcord.php');
  
 /**
  * This class implements the Ripcord server. It is an OO wrapper around PHP's XML-RPC methods, with some added features.
@@ -55,6 +55,9 @@ require_once(dirname(__FILE__).'/ripcord.php');
 	- pass list of protocol parsers/generators in the constructor of the server
 	- protocol must know how to handle the system.* methods
 */
+namespace ripcord;
+use ripcord\ripcord;
+
 class Ripcord_Server 
 {
 	/**
