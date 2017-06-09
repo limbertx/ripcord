@@ -1,8 +1,23 @@
 {
     "name": "anabelle/ripcord",
     "description": "Xml rpc de google",
+    "type": "library",
+    "homepage": "https://github.com/limbertx/ripcord",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anabelle",
+            "email": "web@anabelle.com",
+            "homepage": "http://anabelle.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ripcord": "src"
+        }
+    },    
     "require": {
-        "php": "^5.3.3 || ^7.0",
-        "another-vendor/package": "1.*"
+        "php": ">=5.3.0"
     }
 }
